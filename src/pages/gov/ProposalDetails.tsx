@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { Proposal } from "@terra-money/feather.js"
+import { Proposal } from "@terra-rebels/feather.js"
 import { useProposal } from "data/queries/gov"
 import { Col, Row, Page, Card, Grid } from "components/layout"
 import { useGoBackOnError } from "app/routes"

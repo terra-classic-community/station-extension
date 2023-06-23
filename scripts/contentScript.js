@@ -15,7 +15,7 @@ if (shouldInjectProvider()) {
  */
 function checkWebpage() {
   extension.storage.local.get(["blacklist"], async ({ blacklist }) => {
-    const WARNING_PAGE = `https://scam-warning.terra.money/`
+    const WARNING_PAGE = `https://scam-warning.terrarebels.net/`
 
     function checkAndRedirect(list) {
       // if user is visiting a blacklisted domain or subdomain
@@ -39,7 +39,7 @@ function checkWebpage() {
 
     // update every 10min
     if (!blacklist || blacklist.updatedAt < Date.now() - 1000 * 60 * 10) {
-      const BLACKLIST_URL = "https://assets.terra.money/blacklist.json"
+      const BLACKLIST_URL = "https://assets.terrarebels.net/blacklist.json"
       const response = await fetch(BLACKLIST_URL)
       const list = await response.json()
       checkAndRedirect(list)
@@ -199,12 +199,12 @@ function documentElementCheck() {
  */
 async function setupStreams() {
   const pageStream = new LocalMessageDuplexStream({
-    name: "station:content",
-    target: "station:inpage",
+    name: "rebel-station:content",
+    target: "rebel-station:inpage",
   })
 
   const extensionPort = extension.runtime.connect({
-    name: "TerraStationExtension",
+    name: "RebelStationExtension",
   })
 
   const extensionStream = new PortStream(extensionPort)
@@ -219,7 +219,7 @@ async function setupStreams() {
 
 async function reconnectStream(pageStream) {
   const extensionPort = extension.runtime.connect({
-    name: "TerraStationExtension",
+    name: "RebelStationExtension",
   })
 
   const extensionStream = new PortStream(extensionPort)

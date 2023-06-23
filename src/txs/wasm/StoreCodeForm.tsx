@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { useForm } from "react-hook-form"
-import { MsgStoreCode } from "@terra-money/feather.js"
+import { MsgStoreCode } from "@terra-rebels/feather.js"
 import { useAddress, useChainID } from "data/wallet"
 import { Form, FormItem, Upload } from "components/form"
 import Tx from "../Tx"

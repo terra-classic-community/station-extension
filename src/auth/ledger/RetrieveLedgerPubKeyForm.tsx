@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom"
-import { LedgerKey } from "@terra-money/ledger-station-js"
+import { LedgerKey } from "@terra-rebels/ledger-station-js"
 import useAuth from "../hooks/useAuth"
 import { createBleTransport } from "utils/ledger"
 import { wordsFromAddress } from "utils/bech32"

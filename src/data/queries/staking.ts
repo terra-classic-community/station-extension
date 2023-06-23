@@ -9,8 +9,8 @@ import {
   StakingParams,
   ValAddress,
   Validator,
-} from "@terra-money/feather.js"
-import { Delegation, UnbondingDelegation } from "@terra-money/feather.js"
+} from "@terra-rebels/feather.js"
+import { Delegation, UnbondingDelegation } from "@terra-rebels/feather.js"
 import { has } from "utils/num"
 import { StakeAction } from "txs/stake/StakeForm"
 import { queryKey, Pagination, RefetchOptions } from "../query"

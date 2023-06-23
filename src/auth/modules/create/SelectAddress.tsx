@@ -2,8 +2,12 @@ import { useTranslation } from "react-i18next"
 import { useQuery } from "react-query"
 import { useForm } from "react-hook-form"
 import { readAmount } from "@terra-money/terra-utils"
-import { SeedKey, AccAddress } from "@terra-money/feather.js"
-import { Coins, Delegation, UnbondingDelegation } from "@terra-money/feather.js"
+import { SeedKey, AccAddress } from "@terra-rebels/feather.js"
+import {
+  Coins,
+  Delegation,
+  UnbondingDelegation,
+} from "@terra-rebels/feather.js"
 import { sortCoins } from "utils/coin"
 import { useInterchainLCDClient } from "data/queries/lcdClient"
 import { useCurrency } from "data/settings/Currency"

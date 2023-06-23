@@ -7,9 +7,9 @@ window.isStationExtensionAvailable = true
 // for multiple extension support
 // ---------------------------------------------
 const STATION_INFO = {
-  name: "Station Wallet",
-  identifier: "station",
-  icon: "https://assets.terra.money/icon/station-extension/icon.png",
+  name: "Rebel Station Wallet",
+  identifier: "rebel-station",
+  icon: "https://assets.terrarebels.net/icon/station-extension/icon.png",
 }
 
 if (

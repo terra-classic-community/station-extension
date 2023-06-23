@@ -1,4 +1,4 @@
-import { AccAddress } from "@terra-money/feather.js"
+import { AccAddress } from "@terra-rebels/feather.js"
 import extension from "extensionizer"
 import decrypt from "auth/scripts/decrypt"
 

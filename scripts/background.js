@@ -3,7 +3,7 @@ import PortStream from "extension-port-stream"
 import browser from "webextension-polyfill"
 
 const connectRemote = (remotePort) => {
-  if (remotePort.name !== "TerraStationExtension") {
+  if (remotePort.name !== "RebelStationExtension") {
     return
   }
 

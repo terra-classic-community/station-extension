@@ -5,7 +5,7 @@ import {
 import themes from "styles/themes/themes"
 import { useCallback } from "react"
 import { atom, useRecoilState } from "recoil"
-import { WalletStatus, useWallet } from "@terra-money/use-wallet"
+import { WalletStatus, useWallet } from "@terra-rebels/use-wallet"
 
 export enum SettingKey {
   Theme = "Theme",

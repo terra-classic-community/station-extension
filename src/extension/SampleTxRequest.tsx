@@ -1,4 +1,4 @@
-import { MsgSend } from "@terra-money/feather.js"
+import { MsgSend } from "@terra-rebels/feather.js"
 
 const id = Date.now()
 const address = "terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v"
@@ -8,7 +8,7 @@ const memo =
 const SampleTxRequest = {
   id,
   timestamp: new Date(id),
-  origin: "https://station.terra.money",
+  origin: "https://station.terrarebels.net",
   requestType: "post" as const,
   tx: {
     msgs: [new MsgSend(address, address, "1uusd")],

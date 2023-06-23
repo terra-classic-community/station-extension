@@ -2,22 +2,22 @@
 export const LAZY_LIMIT = 999
 
 /* connection */
-export const BRIDGE = "https://walletconnect.terra.dev"
+export const BRIDGE = "https://walletconnect.terrarebels.net"
 
 /* api */
-export const ASSETS = "https://assets.terra.money"
-export const STATION_ASSETS = "https://station-assets.terra.money"
-export const OBSERVER = "wss://observer.terra.dev"
+export const ASSETS = "https://assets.terrarebels.net"
+export const STATION_ASSETS = "https://station-assets.terrarebels.net"
+export const OBSERVER = "wss://observer.terrarebels.net"
 
 /* website */
-export const STATION = "https://station.terra.money"
-export const FINDER = "https://terrascope.info"
+export const STATION = "https://station.terrarebels.net"
+export const FINDER = "https://finder.terrarebels.net"
 export const MINTSCAN = "https://www.mintscan.io"
 export const EXTENSION =
-  "https://chrome.google.com/webstore/detail/aiifbnbfobpmeekipheeijimdpnlpgpp"
+  "https://chrome.google.com/webstore/detail/rebel-station-wallet/akckefnapafjbpphkefbpkpcamkoaoai"
 export const DOCUMENTATION =
-  "https://docs.terra.money/learn/terra-station/Download/terra-station-desktop.html"
-export const SETUP = "https://setup-station.terra.money/"
+  "https://docs.terrarebels.net/learn/terra-station/Download/terra-station-desktop.html"
+export const SETUP = "https://setup-station.terrarebels.net/"
 export const MARS_TEST_EXPLORER = "https://testnet-explorer.marsprotocol.io"
 export const MARS_EXPLORER = "https://explorer.marsprotocol.io"
 
@@ -27,7 +27,7 @@ export const KADO_API_KEY = "c22391a1-594f-4354-a742-187adb1b91bf"
 
 /* website: stake */
 export const TERRA_VALIDATORS =
-  "https://github.com/terra-money/validator-profiles/tree/master/validators/"
+  "https://github.com/terra-rebels/validator-profiles/tree/master/validators/"
 export const STAKE_ID = "https://stake.id/#/validator/"
 
 /* ledger */

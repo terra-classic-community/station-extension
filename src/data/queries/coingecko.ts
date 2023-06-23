@@ -81,8 +81,7 @@ export const useExchangeRates = () => {
 
       const priceObject = Object.fromEntries(
         Object.entries(prices).map(([denom, { usd, change24h }]) => {
-          // if token is LUNA and network is classic, use LUNC price
-          if (denom === "uluna" && isClassic) {
+          if (denom === "uluna") {
             return [
               denom,
               {

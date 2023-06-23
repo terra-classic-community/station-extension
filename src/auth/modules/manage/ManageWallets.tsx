@@ -11,7 +11,7 @@ import is from "../../scripts/is"
 import useAuth from "../../hooks/useAuth"
 import AuthList from "../../components/AuthList"
 import ConnectedWallet from "./ConnectedWallet"
-import { useWallet, WalletStatus } from "@terra-money/wallet-provider"
+import { useWallet, WalletStatus } from "@terra-rebels/wallet-provider"
 
 export const useManageWallet = () => {
   const { t } = useTranslation()

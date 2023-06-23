@@ -6,10 +6,10 @@ import {
   Tx,
   isTxError,
   SeedKey,
-} from "@terra-money/feather.js"
-import { AccAddress, SignDoc } from "@terra-money/feather.js"
-import { RawKey, SignatureV2 } from "@terra-money/feather.js"
-import { LedgerKey } from "@terra-money/ledger-station-js"
+} from "@terra-rebels/feather.js"
+import { AccAddress, SignDoc } from "@terra-rebels/feather.js"
+import { RawKey, SignatureV2 } from "@terra-rebels/feather.js"
+import { LedgerKey } from "@terra-rebels/ledger-station-js"
 import { useInterchainLCDClient } from "data/queries/lcdClient"
 import is from "../scripts/is"
 import { addWallet, PasswordError } from "../scripts/keystore"

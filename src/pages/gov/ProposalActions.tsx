@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { Proposal } from "@terra-money/feather.js"
+import { Proposal } from "@terra-rebels/feather.js"
 import { LinkButton } from "components/general"
 
 const ProposalActions = ({ proposal }: { proposal: Proposal }) => {
