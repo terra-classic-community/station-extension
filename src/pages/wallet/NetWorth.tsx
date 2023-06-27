@@ -120,14 +120,14 @@ const NetWorth = () => {
           </Button>
           <h3>{capitalize(t("receive"))}</h3>
         </div>
-        {networkName === "mainnet" && (
-          <div className={styles.button__wrapper}>
-            <Button className={styles.wallet_default} onClick={openKadoWindow}>
-              <AddIcon className={styles.icon} />
-            </Button>
-            <h2>{t(capitalize("buy"))}</h2>
-          </div>
-        )}
+        {/*{networkName === "mainnet" && (*/}
+        {/*  <div className={styles.button__wrapper}>*/}
+        {/*    <Button className={styles.wallet_default} onClick={openKadoWindow}>*/}
+        {/*      <AddIcon className={styles.icon} />*/}
+        {/*    </Button>*/}
+        {/*    <h2>{t(capitalize("buy"))}</h2>*/}
+        {/*  </div>*/}
+        {/*)}*/}
       </div>
     </article>
   )
