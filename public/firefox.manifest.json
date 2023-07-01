@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Rebel Station Wallet",
+  "name": "Classic Station Wallet",
   "version": "1.0.9",
   "background": {
     "scripts": ["background.js"],

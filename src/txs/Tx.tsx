@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom"
 import { useRecoilValue, useSetRecoilState } from "recoil"
 import classNames from "classnames"
 import BigNumber from "bignumber.js"
-import { isNil } from "ramda"
+import { head, isNil } from "ramda"
 
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet"
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline"
@@ -25,7 +25,11 @@ import { combineState, RefetchOptions } from "data/query"
 import { queryKey } from "data/query"
 import { useNetwork } from "data/wallet"
 import { isBroadcastingState, latestTxState } from "data/queries/tx"
-import { useIsWalletEmpty } from "data/queries/bank"
+import {
+  CoinBalance,
+  useBankBalance,
+  useIsWalletEmpty,
+} from "data/queries/bank"
 
 import { Pre } from "components/general"
 import { Flex, Grid } from "components/layout"
@@ -44,6 +48,7 @@ import { useInterchainLCDClient } from "data/queries/lcdClient"
 import { useInterchainAddresses } from "auth/hooks/useAddress"
 import { getShouldTax, useTaxCap, useTaxRate } from "data/queries/treasury"
 import { useNativeDenoms } from "data/token"
+import { getAmount, sortByDenom } from "../utils/coin"
 
 interface Props<TxValues> {
   /* Only when the token is paid out of the balance held */
@@ -90,7 +95,9 @@ function Tx<TxValues>(props: Props<TxValues>) {
   const { onPost, redirectAfterTx, queryKeys, onSuccess } = props
 
   const [isMax, setIsMax] = useState(false)
-  const [gasDenom, setGasDenom] = useState<string>("")
+  const [gasDenom, setGasDenom] = useState<string>(
+    getInitialGasDenom(useBankBalance())
+  )
 
   /* context */
   const { t } = useTranslation()
@@ -508,6 +515,11 @@ function Tx<TxValues>(props: Props<TxValues>) {
 
 export default Tx
 
+export const getInitialGasDenom = (bankBalance: CoinBalance[]) => {
+  const denom = head(sortByDenom(bankBalance))?.denom ?? "uusd"
+  const uusd = getAmount(bankBalance, "uusd")
+  return has(uusd) ? "uusd" : denom
+}
 /* utils */
 export const calcMinimumTaxAmount = (
   amount: BigNumber.Value,
