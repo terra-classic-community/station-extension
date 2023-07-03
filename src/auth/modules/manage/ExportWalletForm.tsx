@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { useForm } from "react-hook-form"
 import { Pre } from "components/general"
@@ -8,6 +8,7 @@ import { Input, RadioButton, Submit } from "components/form"
 import { Modal } from "components/feedback"
 import useAuth from "../../hooks/useAuth"
 import QRCode from "../../components/QRCode"
+import QRCodeGen from "../../components/QRCode"
 
 enum Mode {
   QR = "QR code",
@@ -49,7 +50,9 @@ const ExportWalletForm = () => {
   /* render */
   const render = {
     [Mode.QR]: () => (
-      <QRCode value={`terrastation://wallet_recover/?payload=${encoded}`} />
+      <QRCodeGen
+        value={`https://station.terraclassic.community/wallet_recover/?payload=${encoded}`}
+      />
     ),
     [Mode.KEY]: () => (
       <Pre normal break copy>
