@@ -199,12 +199,12 @@ function documentElementCheck() {
  */
 async function setupStreams() {
   const pageStream = new LocalMessageDuplexStream({
-    name: "rebel-station:content",
-    target: "rebel-station:inpage",
+    name: "terra-classic-station:content",
+    target: "terra-classic-station:inpage",
   })
 
   const extensionPort = extension.runtime.connect({
-    name: "RebelStationExtension",
+    name: "TerraClassicStationExtension",
   })
 
   const extensionStream = new PortStream(extensionPort)
@@ -219,7 +219,7 @@ async function setupStreams() {
 
 async function reconnectStream(pageStream) {
   const extensionPort = extension.runtime.connect({
-    name: "RebelStationExtension",
+    name: "TerraClassicStationExtension",
   })
 
   const extensionStream = new PortStream(extensionPort)

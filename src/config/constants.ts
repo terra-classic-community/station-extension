@@ -14,7 +14,7 @@ export const STATION = "https://station.terrarebels.net"
 export const FINDER = "https://finder.terrarebels.net"
 export const MINTSCAN = "https://www.mintscan.io"
 export const EXTENSION =
-  "https://chrome.google.com/webstore/detail/rebel-station-wallet/akckefnapafjbpphkefbpkpcamkoaoai"
+  "https://chrome.google.com/webstore/detail/akckefnapafjbpphkefbpkpcamkoaoai"
 export const DOCUMENTATION =
   "https://docs.terrarebels.net/learn/terra-station/Download/terra-station-desktop.html"
 export const SETUP = "https://setup-station.terrarebels.net/"
@@ -41,7 +41,7 @@ export const CLASSIC_DEFAULT_GAS_ADJUSTMENT = 3
 export const TERRASWAP_COMMISSION_RATE = 0.003
 
 /* placeholder */
-// https://github.com/terra-money/localterra
+// https://github.com/terra-classic-community/localterra
 export const SAMPLE_ADDRESS = "terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v"
 
 export const CURRENCY_KEY = "e484bb7eb1a1cb1471fd5ee925e9b1bc"

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Classic Station Wallet",
-  "version": "1.0.9",
+  "name": "Terra Classic Station Wallet",
+  "version": "1.0.10",
   "background": {
     "service_worker": "background.js",
     "type": "module"
