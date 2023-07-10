@@ -2,22 +2,22 @@
 export const LAZY_LIMIT = 999
 
 /* connection */
-export const BRIDGE = "https://walletconnect.terrarebels.net"
+export const BRIDGE = "https://walletconnect.terra.dev"
 
 /* api */
-export const ASSETS = "https://assets.terrarebels.net"
-export const STATION_ASSETS = "https://station-assets.terrarebels.net"
-export const OBSERVER = "wss://observer.terrarebels.net"
+export const ASSETS = "https://assets.terraclassic.community"
+export const STATION_ASSETS = "https://station-assets.terraclassic.community"
+export const OBSERVER = "wss://observer.terra.dev"
 
 /* website */
-export const STATION = "https://station.terrarebels.net"
-export const FINDER = "https://finder.terrarebels.net"
+export const STATION = "https://station.terraclassic.community"
+export const FINDER = "https://finder.terraclassic.community"
 export const MINTSCAN = "https://www.mintscan.io"
 export const EXTENSION =
   "https://chrome.google.com/webstore/detail/akckefnapafjbpphkefbpkpcamkoaoai"
 export const DOCUMENTATION =
   "https://docs.terrarebels.net/learn/terra-station/Download/terra-station-desktop.html"
-export const SETUP = "https://setup-station.terrarebels.net/"
+export const SETUP = "https://setup-station.terraclassic.community/"
 export const MARS_TEST_EXPLORER = "https://testnet-explorer.marsprotocol.io"
 export const MARS_EXPLORER = "https://explorer.marsprotocol.io"
 
